@@ -4,7 +4,7 @@ $accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
 $textcolor: #333 // Text Color
 $lineheight: 1.65 // Document Line Height
-$userfont: roboto-oh5, sans-serif // User Font Family
+$userfont: Display, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
@@ -26,13 +26,58 @@ $gutter: $grid-gutter-width
 		font-style: $fstyle
 		font-weight: $fweight
 		src: url($furl) format('woff2')
+		// font-display: swap // Uncomment to initially display system fonts
 
-@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-@include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-@include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+@include font('Display', normal, 400, '../fonts/SFProDisplay-Regular.woff2')
+@include font('Display', normal, 500, '../fonts/SFProDisplay-Medium.woff2')
+@include font('Display', normal, 600, '../fonts/SFProDisplay-Semibold.woff2')
+@include font('Display', normal, 700, '../fonts/SFProDisplay-Bold.woff2')
 
 // GENERAL DOCUMENT STYLES
+
+html
+	box-sizing: border-box
+
+*, *::after, *::before
+	box-sizing: inherit
+
+a 
+	text-decoration: none
+	color: inherit
+	display: inline-block
+	transition: all .3s
+	&:hover
+		text-decoration: none
+		color: $accent
+
+p 
+	margin: 0
+	padding: 0
+button 
+	transition: all .3s
+
+button, a
+	border: none
+	&:focus
+		outline: none
+
+input 
+	&:focus
+		border: 1px solid #2F3035
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+	margin: 0
+	font-weight: 400
+
+ul,li 
+	margin: 0
+	padding: 0
+	list-style: none
 
 ::placeholder
 	color: #666
@@ -48,6 +93,12 @@ input, textarea
 	&:required:valid
 		border-color: green
 
+.container
+	max-width: 1140px
+	padding-left: 15px
+	padding-right: 15px
+	margin: 0 auto
+
 body
 	font-family: $userfont
 	font-size: $fontsize
@@ -55,4 +106,5 @@ body
 	color: $textcolor
 	min-width: 320px
 	position: relative
+	font-weight: 400
 	overflow-x: hidden
