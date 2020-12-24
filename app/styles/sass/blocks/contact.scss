@@ -1,0 +1,115 @@
+.contact {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.contactItem__wrap {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.contactItem {
+  position: relative;
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  color: #2c3e50;
+  z-index: 100;
+}
+
+.contactItem:hover::before {
+  top: 6px;
+  left: 30px;
+  opacity: 1;
+}
+
+.contactItem:before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0px;
+  left: 15px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .5s;
+  z-index: -1;
+}
+
+.contactItem__logo {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  background: #2c3e50;
+  color: #fff;
+  font-size: 64px;
+  line-height: 132px;
+}
+
+.contactItem__title {
+  padding: 20px 0;
+  font-size: 28px;
+	color: #2c3e50;
+	font-weight: 700;
+	line-height: 28px;
+}
+
+.contactItem__text {
+	font-weight: 700;
+  margin-bottom: 9px;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.contactItem__link {
+  color: #2c3e50;
+}
+
+.contactItem--hover-bg1:hover .contactItem__logo {
+  background: #36a955;
+}
+
+.contactItem--hover-bg1:before {
+  background: #36a955;
+}
+
+.contactItem--hover-bg2:hover .contactItem__logo {
+  background: #d93025;
+}
+
+.contactItem--hover-bg2 .contactItem__link:hover {
+  color: #d93025;
+}
+
+.contactItem--hover-bg2:before {
+  background: #d93025;
+}
+
+.contactItem--hover-bg3:hover .contactItem__logo {
+  background: #2c3e50;
+}
+
+.contactItem--hover-bg3 .contactItem__link:hover {
+  color: #2c3e50;
+}
+
+.contactItem--hover-bg3:before {
+  background: #2c3e50;
+}
+
+.contactItem--hover-bg4:hover .contactItem__logo {
+  background: #00aff0;
+}
+
+.contactItem--hover-bg4 .contactItem__link:hover {
+  color: #00aff0;
+}
+
+.contactItem--hover-bg4:before {
+  background: #00aff0;
+}
