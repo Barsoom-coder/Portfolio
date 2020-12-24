@@ -82,13 +82,18 @@
 
 .header__profile-subtitle {
   margin-bottom: 100px;
-  color: #46B6A0;
+	color: #46B6A0;
+	font-size: 24px;
+	font-weight: 700;
   text-transform: uppercase;
 }
 
 .header__profile-name {
   color: #fff;
-  line-height: 75px;
+	line-height: 75px;
+	font-size: 56px;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .header__profile-name span {

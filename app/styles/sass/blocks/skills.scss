@@ -1,0 +1,78 @@
+.skills {
+	position: relative;
+  padding: 50px;
+  background: url("../images/dist/quality-bg1.jpg") 50% 0 no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 50px;
+}
+.skillItem__wrap {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.skillItem__row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+	flex-direction: row;
+}
+.skillItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	justify-content: space-between;
+	margin-right: 46px;
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+
+.skills:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: radial-gradient(
+      ellipse at center,
+      rgba(158, 158, 158, 0.7) 0%,
+      rgba(158, 158, 158, 0.7) 0%,
+      rgba(66, 66, 66, 0.7) 52%,
+      rgba(0, 0, 0, 0.7) 100%
+			),
+    url("../images/dist/pattern.png");
+}
+
+.skillItem__title {
+	margin-bottom: 19px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.skillItem__list {
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: #fff;
+  padding-left: 30px;
+  width: 349px;
+}
+
+.skillItem__skill {
+  position: relative;
+	margin-bottom: 10px;
+}
+
+.skillItem__skill:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  left: -30px;
+  top: 11px;
+  background: #fff;
+  transform: rotate(45deg);
+}
