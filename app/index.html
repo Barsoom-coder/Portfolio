@@ -266,6 +266,43 @@
       </div>
     </div>
   </section>
+
+  <section class="feedback">
+    <div class="container">
+      <div class="sectionTitle sectionTitle--white wow slideInUp" id="feedback">
+        <h2 class="sectionTitle__text" id="about">Отправить заявку</h2>
+        <div class="sectionTitle__icon sectionTitle__icon--white">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+      </div>
+      <p class="feedback__text">
+        Для того, чтобы определить сроки выполнеия и стоимость работ мне необходимы макеты сайта и техническое
+        задание с требованиями по выполнению проекта.
+      </p>
+      <form class="form" id="myForm">
+        <div class="form__wrap">
+            <div class="form__block">
+              <div class="form__row">
+                <input class="form__enter" type="text" name="name" placeholder="Ваше имя" />
+              </div>
+              <div class="form__row">
+                <input class="form__enter" type="email" name="email" placeholder="Ваш Email" />
+              </div>
+              <div class="form__row">
+                <input class="form__enter" type="text" name="subject" placeholder="Тема" />
+              </div>
+            </div>
+            <div class="form__block">
+              <div class="form__row">
+                <textarea class="form__textarea" name="message" placeholder="Ваше сообщение"></textarea>
+              </div>
+              <button class="form__button" type="submit">Отправить</button>
+            </div>
+        </div>
+      </form>
+      <div id="answer"></div>
+    </div>
+  </section>
 </main>
 
 <!--#include virtual="/parts/footer.html" -->
