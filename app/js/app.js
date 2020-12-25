@@ -1,7 +1,6 @@
 import $ from 'jquery'; window.jQuery = $; window.$ = $; // import jQuery module (npm i -D jquery)
 import slick from 'slick-carousel';
 import validate from 'jquery-validation';
-
 // require('~/app/libs/mmenu/js/jquery.mmenu.all.min.js') // import vendor jQuery plugin example (not module)
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -111,6 +110,38 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 			// Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
 			return false;
+	}
+	
+	// $(".btnScroll").click(function () {
+  //   $("html, body").animate({ scrollTop: 0 }, "slow");
+  //   return false;
+	// });
+	
+	// $(window).scroll(function () {
+	// 	if ($(this).scrollTop() > $(window).height() * 0.2) {
+	// 		// $(".btnScroll").css("display", "flex").fadeIn();
+	// 		$(".btnScroll").fadeIn();
+	// 	} else {
+	// 		// $(".btnScroll").css("display", "none").fadeOut();
+	// 		$(".btnScroll").fadeOut();
+	// 	}
+	// });
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > $(window).height() * 0.2) {
+			$('.btnScroll').fadeIn();
+		} else {
+			$('.btnScroll').fadeOut();
 		}
+	});
+
+
+	$('.btnScroll').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, "slow");
+		return false;
+	});
+
 
 });

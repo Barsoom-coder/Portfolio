@@ -77,7 +77,8 @@
 
 .form__enter:focus,
 .form__textarea:focus {
-  border: 2px solid #507192;
+	border: 2px solid #507192;
+	background: rgba(255, 255, 255, 1);
 }
 
 .form__textarea {

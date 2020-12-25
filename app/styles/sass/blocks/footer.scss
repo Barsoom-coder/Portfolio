@@ -1,0 +1,82 @@
+.footer {
+  padding: 50px;
+}
+
+.footer__social {
+  text-align: center;
+}
+
+.footer__develop {
+	text-align: center;
+	font-size: 20px;
+	line-height: 22px;
+	letter-spacing: 1px;
+}
+
+.footer__develop i,
+.footer__develop span {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 0 20px;
+  margin-bottom: 40px;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 28px;
+  line-height: 50px;
+  color: white;
+  z-index: 10;
+}
+
+.social__item:hover {
+  color: white;
+}
+
+.social__item:hover::after {
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  opacity: 1;
+}
+
+.social__item:after {
+  content: "";
+  position: absolute;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  top: -10px;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.social__item--vk:after {
+  background: #4c75a3;
+}
+
+.social__item--facebook:after {
+  background: #3b5998;
+}
+
+.social__item--ok:after {
+  background: #ff7f50;
+}
+
+.social__item--github:after {
+  background: #24292e;
+}

@@ -32,7 +32,9 @@
 		"webpack-stream": "^6.1.1"
 	},
 	"dependencies": {
+		"animate.css": "^4.1.1",
 		"jquery-validation": "^1.19.2",
-		"slick-carousel": "^1.8.1"
+		"slick-carousel": "^1.8.1",
+		"wow.js": "^1.2.2"
 	}
 }
