@@ -49,12 +49,16 @@
 .skillItem__title {
 	margin-bottom: 19px;
   color: #fff;
-  font-weight: 700;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-weight: 400;
+  padding-right: 60px;
 }
 
 .skillItem__list {
   margin-bottom: 40px;
   font-size: 20px;
+  line-height: 24px;
+  font-family: 'RobotoCondensed', sans-serif;
   color: #fff;
   padding-left: 30px;
   width: 349px;
@@ -72,7 +76,7 @@
   width: 10px;
   height: 10px;
   left: -30px;
-  top: 11px;
+  top: 8px;
   background: #fff;
   transform: rotate(45deg);
 }

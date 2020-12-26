@@ -8,22 +8,369 @@
 	<title>OptimizedHTML 5</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 	<meta name="viewport" content="width=device-width">
-	<link rel="icon" href="images/favicon.png">
-	<meta property="og:image" content="images/dist/preview.jpg">
+	<!-- <link rel="icon" href="images/favicon.png"> -->
+	<!-- <meta property="og:image" content="images/dist/preview.jpg"> -->
+	<script src="https://use.fontawesome.com/310e425474.js"></script>
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
 <body>
 
-	<div style="max-width: 700px; margin: auto">
+<div class="header">
+  <div class="container container-header">
+    <div class="header__wrap">
+      <div class="header__logo">
+        <a class="header__logo-name" href="#"> <img src="images/dist/Logo.png" alt="Logo" /></a>
+      </div>
+      <!-- <div class="header__btnGuide btnGuide"><span class="btnGuide__content"></span></div> -->
+      <nav class="header__navbar navbar">
+        <ul class="navbar__nav navbar__nav--header">
+          <li class="navbar__item navbar__item--header">
+            <a class="navbar__link navbar__link--header" href="#about"><span>Обо мне</span></a>
+          </li>
+          <li class="navbar__item navbar__item--header">
+            <a class="navbar__link navbar__link--header" href="#skills"><span>Навыки</span></a>
+          </li>
+          <li class="navbar__item navbar__item--header">
+            <a class="navbar__link navbar__link--header" href="#pageproofs"><span>Верстка</span></a>
+          </li>
+          <li class="navbar__item navbar__item--header">
+            <a class="navbar__link navbar__link--header" href="#work"><span>Портфолио</span></a>
+          </li>
+          <li class="navbar__item navbar__item--header">
+            <a class="navbar__link navbar__link--header" href="#contact"><span>Контакты</span></a>
+          </li>
+          <li class="navbar__item navbar__item--header">
+            <a class="navbar__link navbar__link--header" href="#feedback"><span>Заявка</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2>Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
-	
-	</div>
+    <div class="header__profile">
+      <div class="btnScroll"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+      <div class="header__profile-wrap">
+        <div class="header__profile-info">
+          <h3 class="header__profile-subtitle subtitle animate__animated  animate__bounceInLeft">HTML / CSS / JS</h3>
+          <h1 class="header__profile-name animate__animated  animate__bounceInRight">
+            Добрый день,<br />меня зовут Роман Кеменчежи<br /><span>Web разработчик</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<main class="main">
+  <section class="aboutMe">
+    <div class="container">
+      <div class="sectionTitle wow animate__animated  animate__slideInUp" id="about">
+        <h2 class="sectionTitle__text" id="about">Обо мне</h2>
+        <div class="sectionTitle__icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+      </div>
+      <p class="aboutMe__info">
+        Приветствую Вас на своем сайте-портфолио. Меня зовут Алескей. Живу в Москве. Занимаюсь HTML-версткой сайтов. У
+        меня полностью кроссбраузерная, адаптивная и валидная верстка. Для обеспечения выполнения требований,
+        предъявляемых к верстке сайта в процессе работы над проектом я использую сборщик проектов Gulp для автоматизации
+        процесса верстки, препроцессоры Less/Sass для ускоренной стилизации сайта и более гибкого кода, шаблонизатор
+        Pug, Pixel Perfect для верстки, совпадающей с предоставленным макетом «пиксель в пиксель», БЭМ, Bootstrap,
+        Smartgrid и media-запросы для адаптивной верстки сайта. Динамика сайта организуется собственным jQuery кодом или
+        настроенными плагинами. В конце работы осуществляется проверка отображения верстки в различных браузерах на
+        разных устройствах, код проверяется валидатором на соответствие стандартам и устраняются выявленные ошибки.
+      </p>
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="container">
+      <div class="sectionTitle sectionTitle--white wow animate__animated  animate__slideInUp" id="skills">
+        <h2 class="sectionTitle__text" id="about">Мои навыки</h2>
+        <div class="sectionTitle__icon sectionTitle__icon--white"><i class="fa fa-cog" aria-hidden="true"></i></div>
+      </div>
+
+      <div class="skillItem__wrap">
+        <div class="skillItem__row">
+          <div class="skillItem">
+            <h4 class="skillItem__title subtitle">HTML5/CSS3</h4>
+            <div class="skillItem__list">
+              <p class="skillItem__skill">Валидный, кроссбраузерный код</p>
+              <p class="skillItem__skill">Семантичная верстка</p>
+              <p class="skillItem__skill">Структутированный код</p>
+              <p class="skillItem__skill">Анимация, hover-эффекты без JS</p>
+              <p class="skillItem__skill">PixelPerfect</p>
+              <p class="skillItem__skill">Методология БЭМ</p>
+            </div>
+          </div>
+          <div class="skillItem">
+            <h4 class="skillItem__title subtitle">Javascript/JQuery</h4>
+            <ul class="skillItem__list">
+              <li class="skillItem__skill">Свой Javascript/JQuery код</li>
+              <li class="skillItem__skill">Настроенные JQuery плагины</li>
+              <li class="skillItem__skill">API Карт - Яндекс</li>
+              <li class="skillItem__skill">Комментируемый код</li>
+            </ul>
+          </div>
+          <div class="skillItem">
+            <h4 class="skillItem__title subtitle">Photoshop/Figma</h4>
+            <ul class="skillItem__list">
+              <li class="skillItem__skill">Нарезка изображений из макета</li>
+              <li class="skillItem__skill">Оптимизация изображений для Web</li>
+              <li class="skillItem__skill">Экспорт SVG-изображений</li>
+              <li class="skillItem__skill">Экспорт стилей для ускоренной верстки</li>
+              <li class="skillItem__skill">Создание спрайтов</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skillItem__row">
+          <div class="skillItem">
+            <h4 class="skillItem__title subtitle">Gulp/Pug</h4>
+            <ul class="skillItem__list">
+              <li class="skillItem__skill">Быстрое разворачивание проекта</li>
+              <li class="skillItem__skill">Автоматизация процесса верстки</li>
+              <li class="skillItem__skill">Компиляция препроцессоров</li>
+              <li class="skillItem__skill">Использование шаблонизаторов</li>
+              <li class="skillItem__skill">Минификация файлов</li>
+            </ul>
+          </div>
+          <div class="skillItem">
+            <h4 class="skillItem__title subtitle">Bootstrap/Smart-grid</h4>
+            <ul class="skillItem__list">
+              <li class="skillItem__skill">Высокая скорость разработки сайта</li>
+              <li class="skillItem__skill">Кроссбраузерность и адаптивность сайта</li>
+              <li class="skillItem__skill">Готовые шаблоны элементов сайта</li>
+              <li class="skillItem__skill">Оптимизированная навигация</li>
+            </ul>
+          </div>
+          <div class="skillItem">
+            <h4 class="skillItem__title subtitle">Less/Sass</h4>
+            <ul class="skillItem__list">
+              <li class="skillItem__skill">Ускоренная стилизация сайта</li>
+              <li class="skillItem__skill">Более гибкий код</li>
+              <li class="skillItem__skill">Улучшенная логика стилей</li>
+              <li class="skillItem__skill">Упрощенный синтаксис</li>
+              <li class="skillItem__skill">Вложенность селекторов без ошибок</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pageProofs">
+    <div class="container">
+      <div class="sectionTitle wow animate__animated  animate__slideInUp" id="pageproofs">
+        <h2 class="sectionTitle__text" id="about">Процесс верстки</h2>
+        <div class="sectionTitle__icon"><i class="fa fa-legal" aria-hidden="true"></i></div>
+      </div>
+      <div class="step__box">
+        <div class="step__wrap">
+          <div class="step">
+            <div class="step__way step__way--way1"></div>
+            <div class="step__icon"><i class="fa fa-scissors" aria-hidden="true"></i></div>
+            <p class="step__name">Работа с макетом</p>
+          </div>
+        </div>
+        <div class="step__wrap">
+          <div class="wow animate__animated  animate__bounceInRight" data-wow-delay=".2s">
+            <div class="step">
+              <div class="step__way step__way--way2"></div>
+              <p class="step__name">Верстка контента</p>
+              <div class="step__icon"><i class="fa fa-html5" aria-hidden="true"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="step__wrap">
+          <div class="wow animate__animated  animate__bounceInRight" data-wow-delay=".4s">
+            <div class="step">
+              <div class="step__way step__way--way3"></div>
+              <div class="step__icon"><i class="fa fa-css3" aria-hidden="true"></i></div>
+              <p class="step__name">Стилизация сайта</p>
+            </div>
+          </div>
+        </div>
+        <div class="step__wrap">
+          <div class="wow animate__animated  animate__bounceInRight" data-wow-delay=".6s">
+            <div class="step">
+              <div class="step__way step__way--way4"></div>
+              <p class="step__name">Адаптивная верстка</p>
+              <div class="step__icon"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="step__wrap">
+          <div class="wow animate__animated  animate__bounceInRight" data-wow-delay=".8s">
+            <div class="step">
+              <div class="step__way step__way--way5"></div>
+              <div class="step__icon"><i class="fa fa-internet-explorer" aria-hidden="true"></i></div>
+              <p class="step__name">Проверка в браузерах</p>
+            </div>
+          </div>
+        </div>
+        <div class="step__wrap">
+          <div class="wow animate__animated  animate__bounceInRight" data-wow-delay="1s">
+            <div class="step">
+              <p class="step__name">Устранение ошибок</p>
+              <div class="step__icon"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider__wrap">
+        <h3 class="pageProofs__resurseTitle">Что я использую в процессе верстки</h3>
+        <div class="slider">
+          <div class="slider__button slider__button--prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </div>
+          <div class="slider__button slider__button--next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </div>
+          <div class="slider__row">
+            <div class="slider__item"><img class="img" src="images/dist/avocode-logo.jpg" alt="Ресурсы" /></div>
+            <div class="slider__item"><img class="img" src="images/dist/bootstrap-logo.jpg" alt="Ресурсы" /></div>
+            <div class="slider__item"><img class="img" src="images/dist/gulp-logo.jpg" alt="Ресурсы" /></div>
+            <div class="slider__item"><img class="img" src="images/dist/html-logo.jpg" alt="Ресурсы" /></div>
+            <div class="slider__item"><img class="img" src="images/dist/JavaScript.jpg" alt="Ресурсы" /></div>
+            <div class="slider__item"><img class="img" src="images/dist/jquery-logo.jpg" alt="Ресурсы" /></div>
+            <div class="slider__item"><img class="img" src="images/dist/less-logo.jpg" alt="Ресурсы" /></div>
+            <div class="slider__item"><img class="img" src="images/dist/photoshop-logo.jpg" alt="Ресурсы" /></div>
+            <div class="slider__item"><img class="img" src="images/dist/pixel-logo.jpg" alt="Ресурсы" /></div>
+            <div class="slider__item"><img class="img" src="images/dist/sass.jpg" alt="Ресурсы" /></div>
+            <div class="slider__item"><img class="img" src="images/dist/figma.jpg" alt="Ресурсы" /></div>
+            <div class="slider__item"><img class="img" src="images/dist/pug.jpg" alt="Ресурсы" /></div>
+            <div class="slider__item"><img class="img" src="images/dist/smart.jpg" alt="Ресурсы" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="sectionTitle wow animate__animated  animate__slideInUp" id="contact">
+        <h2 class="sectionTitle__text" id="about">Контакты</h2>
+        <div class="sectionTitle__icon"><i class="fa fa-comment" aria-hidden="true"></i></div>
+      </div>
+      <div class="contactItem__wrap">
+        <div class="contactItem contactItem--hover-bg1">
+          <div class="contactItem__logo"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <h5 class="contactItem__title">Адрес</h5>
+          <p class="contactItem__text">Russia</p>
+          <p class="contactItem__text">Moscow</p>
+        </div>
+        <div class="contactItem contactItem--hover-bg2">
+          <div class="contactItem__logo"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+          <h5 class="contactItem__title">Email</h5>
+          <p class="contactItem__text">
+            <a class="contactItem__link" href="mailto:romanych@gmail.com">romanych@gmail.com</a>
+          </p>
+        </div>
+        <div class="contactItem contactItem--hover-bg3">
+          <div class="contactItem__logo"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+          <h5 class="contactItem__title">Phone</h5>
+          <p class="contactItem__text">
+            <a class="contactItem__link" href="tel:+7777777777">+7 (777) 77 77 77 </a>
+          </p>
+        </div>
+        <div class="contactItem contactItem--hover-bg4">
+          <div class="contactItem__logo"><i class="fa fa-skype" aria-hidden="true"></i></div>
+          <h5 class="contactItem__title">Skype</h5>
+          <p class="contactItem__text">
+            <a class="contactItem__link" href="skype:live:asdfgjkl;asdfjl">live:asdfgjkl;asdfjl</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback">
+    <div class="container">
+      <div class="sectionTitle sectionTitle--white wow animate__animated  animate__slideInUp" id="feedback">
+        <h2 class="sectionTitle__text" id="about">Отправить заявку</h2>
+        <div class="sectionTitle__icon sectionTitle__icon--white">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+      </div>
+      <p class="feedback__text">
+        Для того, чтобы определить сроки выполнеия и стоимость работ мне необходимы макеты сайта и техническое задание с
+        требованиями по выполнению проекта.
+      </p>
+      <form class="form" id="myForm">
+        <div class="form__wrap">
+          <div class="form__block">
+            <div class="form__row">
+              <input class="form__enter" type="text" name="name" placeholder="Ваше имя" />
+            </div>
+            <div class="form__row">
+              <input class="form__enter" type="email" name="email" placeholder="Ваш Email" />
+            </div>
+            <div class="form__row">
+              <input class="form__enter" type="text" name="subject" placeholder="Тема" />
+            </div>
+          </div>
+          <div class="form__block">
+            <div class="form__row">
+              <textarea class="form__textarea" name="message" placeholder="Ваше сообщение"></textarea>
+            </div>
+            <button class="form__button" type="submit">Отправить</button>
+          </div>
+        </div>
+      </form>
+      <div id="answer"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__social-wrap">
+      <div class="footer__social social">
+        <a
+          class="social__item social__item--vk wow animate__animated  animate__rollIn"
+          href="https://vk.com/"
+          target="_blank"
+          data-wow-animate__animated  animate__duration="1s"
+          ><i class="fa fa-vk" aria-hidden="true"></i></a
+        ><a
+          class="social__item social__item--facebook wow animate__animated  animate__rollIn"
+          href="https://www.facebook.com/"
+          target="_blank"
+          data-wow-animate__animated  animate__duration="1s"
+          data-wow-delay=".1s"
+          ><i class="fa fa-facebook" aria-hidden="true"></i></a
+        ><a
+          class="social__item social__item--ok wow animate__animated  animate__rollIn"
+          href=""
+          target="_blank"
+          data-wow-animate__animated  animate__duration="1s"
+          data-wow-delay=".2s"
+          ><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a
+        ><a
+          class="social__item social__item--github wow animate__animated  animate__rollIn"
+          href="https://github.com/"
+          target="_blank"
+          data-wow-animate__animated  animate__duration="1s"
+          data-wow-delay=".3s"
+          ><i class="fa fa-github-alt" aria-hidden="true"></i
+        ></a>
+      </div>
+    </div>
+    <div class="footer__develop-wrap">
+      <p class="footer__develop wow animate__animated  animate__slideInUp">
+        <i class="fa fa-copyright" aria-hidden="true"></i><span>Portfolio</span> Developed by
+        <span>Roman Kemenchezhi</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+	<script src="libs/wow.js/dist/wow.js"></script>
+	<script>
+		var wow = new WOW({
+			mobile: false,
+		});
+		new WOW().init();
+	</script>
 	<script src="js/app.min.js"></script>
 
 </body>

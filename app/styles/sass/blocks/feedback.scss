@@ -1,4 +1,6 @@
 .feedback {
+  font-family: 'SourceSansPro-Regular', sans-serif;
+	font-weight: 400;
   padding: 100px 0;
   position: relative;
   background: url("../images/dist/form-bg.jpg") 50% 0 no-repeat;
@@ -18,11 +20,13 @@
 
 .feedback__text {
   position: relative;
-  margin-bottom: 20px;
+  width: 92%;
+  margin: 0 auto 20px;
   color: #fff;
 	z-index: 50;
 	font-weight: 500;
-	font-size: 21px;
+  font-size: 21px;
+  font-family: 'RobotoCondensed', sans-serif;
 	line-height: 24px;
   text-align: center;
 }

@@ -30,10 +30,12 @@ $gutter: $grid-gutter-width
 		src: url($furl) format('woff2')
 		// font-display: swap // Uncomment to initially display system fonts
 
+@include font('RobotoCondensed', normal, 400, '../fonts/RobotoCondensed-Regular.woff2')
 @include font('Display', normal, 400, '../fonts/SFProDisplay-Regular.woff2')
-@include font('Display', normal, 500, '../fonts/SFProDisplay-Medium.woff2')
-@include font('Display', normal, 600, '../fonts/SFProDisplay-Semibold.woff2')
 @include font('Display', normal, 700, '../fonts/SFProDisplay-Bold.woff2')
+@include font('Oswald-Regular', normal, 400, '../fonts/Oswald-Regular.woff2')
+@include font('Oswald-Bold', normal, 700, '../fonts/Oswald-Bold.woff2')
+@include font('SourceSansPro-Regular', normal, 400, '../fonts/SourceSansPro-Regular.woff2')
 
 // GENERAL DOCUMENT STYLES
 
@@ -76,6 +78,10 @@ h6
 	margin: 0
 	font-weight: inherit
 	font-size: inherit
+
+h1,
+h2
+	font-family: 'Oswald-Bold', sans-serif
 
 ul,li 
 	margin: 0

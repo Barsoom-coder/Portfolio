@@ -8,7 +8,8 @@
   padding-bottom: 50px;
 	text-align: center;
 	font-size: 28px;
-	font-weight: 700;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-weight: 400;  
   color: #2c3e50;
 }
 
@@ -20,7 +21,7 @@
 .step__wrap {
 	display: flex;
 	justify-content: flex-start;
-	width: 190px;
+  width: 190px;
 }
 .step {
 	position: relative;
@@ -34,7 +35,7 @@
   position: absolute;
   width: 5px;
   height: 82px;
-  top: 36%;
+  top: 34%;
   right: -1%;
   background: #2c3e50;
 }
@@ -76,14 +77,18 @@
   font-size: 60px;
   color: #2c3e50;
   font-weight: bold;
-  line-height: 130px;
+  line-height: 100px;
   z-index: 10;
 }
 
 .step__name {
   margin: 10px 0;
 	font-size: 20px;
-	font-weight: 700;
+	font-family: 'Oswald-Regular', sans-serif;
+  font-weight: 400;
+  width: 173px;
+  letter-spacing: 0.01em;
+  padding-top: 20px;
 }
 .slider__wrap {
 	display: flex;
