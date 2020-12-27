@@ -73,6 +73,7 @@
   vertical-align: middle;
   padding: 9px 15px;
   color: #fff;
+  border: 2px solid #fff;
   font-size: 20px;
   background: #2c3e50;
   border-radius: 5px;
@@ -243,6 +244,10 @@ label.error {
   text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.1) !important;
   padding-top: 6px !important;
   padding-left: 7px !important;
+}
+
+.pt {
+  padding-top: 36px;
 }
 
 

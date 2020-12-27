@@ -14,7 +14,8 @@
 }
 
 .step__box {
-	display: flex;
+  display: flex;
+  align-items: center;
 	width: 100%;
 	justify-content: space-between;
 }
@@ -35,7 +36,7 @@
   position: absolute;
   width: 5px;
   height: 82px;
-  top: 34%;
+  top: 36%;
   right: -1%;
   background: #2c3e50;
 }
@@ -67,6 +68,9 @@
 
 .step__icon {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 140px;
   height: 140px;
   margin: 0 auto;
@@ -88,7 +92,13 @@
   font-weight: 400;
   width: 173px;
   letter-spacing: 0.01em;
-  padding-top: 20px;
+  &:nth-child(even) {
+    padding-top: 36px;
+  }
+}
+
+.step__way--way2, .step__way--way4 {
+  top: 38%;
 }
 .slider__wrap {
 	display: flex;
